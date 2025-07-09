@@ -1,3 +1,5 @@
+// standard c++ file handling
+
 #include<iostream>
 #include<fstream>
 #include<string>
@@ -20,7 +22,7 @@ void write() {
 
 void read() {
     std::fstream file("files/read.txt", std::ios::in);
-    
+
     if(!file.is_open()) {
         std::cerr << "Could'nt open the file";
     }
